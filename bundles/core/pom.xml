@@ -313,6 +313,10 @@
         </dependency>
         <dependency>
             <groupId>org.osgi</groupId>
+            <artifactId>osgi.core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
             <artifactId>osgi.cmpn</artifactId>
         </dependency>
         <dependency>
@@ -376,6 +380,12 @@
             <scope>test</scope>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.api</artifactId>
+            <version>2.11.0</version>
+            <scope>test</scope>
+        </dependency>
         <!-- for testing we need the new ResourceTypeBasedResourcePicker -->
         <dependency>
             <groupId>org.apache.sling</groupId>
@@ -385,7 +395,7 @@
         </dependency>
         <dependency>
             <groupId>io.wcm</groupId>
-            <artifactId>io.wcm.testing.aem-mock</artifactId>
+            <artifactId>io.wcm.testing.aem-mock.junit4</artifactId>
             <exclusions>
                 <exclusion>
                     <groupId>org.apache.sling</groupId>
@@ -395,7 +405,7 @@
         </dependency>
         <dependency>
             <groupId>org.apache.sling</groupId>
-            <artifactId>org.apache.sling.testing.sling-mock</artifactId>
+            <artifactId>org.apache.sling.testing.sling-mock.junit4</artifactId>
             <exclusions>
                 <!-- Exclude the older version of the API and use the one from the uber-jar -->
                 <exclusion>
